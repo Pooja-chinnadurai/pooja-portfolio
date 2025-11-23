@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pooja C — Portfolio</title>
+  <meta name="description" content="Pooja C — Electronics & Communication Engineer | Embedded · IoT" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071024 0%, #071633 100%);color:#e6eef6}
+    .container{max-width:980px;margin:36px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:102px;height:102px;border-radius:14px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    h1{margin:0;font-size:26px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:18px;margin-top:20px}
+    .section{margin-top:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .projects>article{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:10px}
+    .meta{color:var(--muted);font-size:13px}
+    .contact a{color:var(--accent);text-decoration:none}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.avatar{width:82px;height:82px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <img src="passport_size.jpg" alt="Pooja Photo" style="width:102px;height:102px;border-radius:14px;object-fit:cover;"/>
+        <div>
+          <h1>Pooja C</h1>
+          <div class="subtitle">Electronics & Communication Engineer — Embedded · IoT</div>
+          <div style="margin-top:10px;color:var(--muted);font-size:14px">Krishnagiri, Tamil Nadu · <a class="contact" href="mailto:poojarasi72@gmail.com">poojarasi72@gmail.com</a> · 9994699147</div>
+          <div style="margin-top:6px"><a class="contact" href="https://www.linkedin.com/in/poojachinnadurai" target="_blank">linkedin.com/in/poojachinnadurai</a></div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h3>About</h3>
+            <p class="meta">A motivated Electronics and Communication Engineering graduate focused on Embedded Systems and IoT. Skilled in embedded programming, sensor interfacing, and building reliable prototypes and products.</p>
+          </section>
+
+          <section class="section">
+            <h3>Projects</h3>
+            <div class="projects">
+              <article>
+                <strong>Smart Home Automation System</strong>
+                <div class="meta">ESP8266 / Arduino — Automation · Cloud dashboard · Sensors</div>
+                <p>Designed a complete IoT-based home automation system enabling control of appliances via Wi-Fi. Integrated temperature, PIR motion and LDR sensors to automate environment‑based responses. Built a cloud dashboard for monitoring, OTA updates and remote control. Focus: embedded firmware, sensor integration, and OTA updates.</p>
+              </article>
+
+              <article>
+                <strong>Smart Roll Call System</strong>
+                <div class="meta">RFID · ESP32 · Embedded C</div>
+                <p>Created an automated attendance system using RFID scanning, EEPROM data logging and Wi-Fi data transfer. Implemented debouncing, LCD output, and optimized scanning performance. Focus: reliable embedded data handling and low-power operation.</p>
+              </article>
+
+              <article>
+                <strong>Smart Medicine Dispenser</strong>
+                <div class="meta">RTC Module · Servo Motor · Embedded Scheduler</div>
+                <p>Built a timed medication alert and dispensing system for elderly care. Programmed RTC schedules, buzzer reminders, and secure compartment release using servo motors. Focus: safety, scheduling accuracy and user-friendly alerts.</p>
+              </article>
+
+              <article>
+                <strong>Smart Energy Monitoring System</strong>
+                <div class="meta">ACS712 · IoT Dashboard · Load Profiling</div>
+                <p>Developed an energy usage monitoring device measuring AC load with ACS712 current sensors. Implemented filtering, calibration routines and cloud-based real-time visualization. Focus: accurate measurement and data visualization.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Career Interests</h3>
+            <p class="meta">Embedded Systems Engineer · IoT Engineer · System Engineer</p>
+          </section>
+        </main>
+
+        <aside>
+          <section class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+              <span class="chip">Embedded Systems</span>
+              <span class="chip">C Programming</span>
+              <span class="chip">Python</span>
+              <span class="chip">Arduino / ESP32</span>
+              <span class="chip">Sensors & Actuators</span>
+              <span class="chip">UART / SPI / I2C</span>
+              <span class="chip">Soldering & Debugging</span>
+              <span class="chip">MS Excel (Reports)</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Strengths</h3>
+            <ul class="meta">
+              <li>Quick Learner</li>
+              <li>Detail-oriented</li>
+              <li>Team player</li>
+              <li>Disciplined & Reliable</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h3>Languages</h3>
+            <div class="meta">English — Professional<br/>Tamil — Native<br/>Telugu — Basic</div>
+          </section>
+
+          <section class="section">
+            <h3>Resume</h3>
+            <p class="meta">Download my updated resume:</p>
+            <a href="Final_resume.pdf" download style="color:var(--accent);font-weight:600;">📄 Download Resume (PDF)</a>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>© Pooja C — Electronics & Communication Engineering</div>
+          <div class="meta">Last updated: November 23, 2025</div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
