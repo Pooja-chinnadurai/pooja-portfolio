@@ -43,10 +43,7 @@ header img{
   border-radius:14px;
   object-fit:cover;
 }
-.subtitle{
-  color:var(--muted);
-  margin-top:6px;
-}
+.subtitle{color:var(--muted)}
 a{color:var(--accent);text-decoration:none}
 .grid{
   display:grid;
@@ -54,13 +51,9 @@ a{color:var(--accent);text-decoration:none}
   gap:20px;
   margin-top:24px;
 }
-.section{margin-top:20px}
+.section{margin-top:22px}
 .meta{color:var(--muted);font-size:14px}
-.skills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
 .chip{
   background:rgba(255,255,255,0.06);
   padding:8px 12px;
@@ -73,14 +66,8 @@ a{color:var(--accent);text-decoration:none}
   border-radius:12px;
   margin-bottom:12px;
 }
-footer{
-  margin-top:24px;
-  font-size:13px;
-  color:var(--muted);
-}
-@media(max-width:900px){
-  .grid{grid-template-columns:1fr}
-}
+footer{margin-top:24px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -108,36 +95,35 @@ footer{
 <main>
 
 <section class="section">
-<h3>About Me</h3>
+<h3>Professional Summary</h3>
 <p class="meta">
 Electronics and Communication Engineering graduate with hands-on experience in Embedded Systems, IoT,
 and real industry exposure as a Graduate Apprentice Trainee at Foxconn (Apple Display Manufacturing Division).
-Experienced in quality inspection, defect analysis, SOP adherence, and embedded system development.
-Actively seeking entry-level Embedded / IoT / Electronics / Quality Engineer roles.
+Seeking an entry-level Embedded Systems / IoT / Electronics / Automation Engineer role where I can apply
+my technical skills, quality-focused mindset, and strong willingness to learn.
 </p>
 </section>
 
 <section class="section">
 <h3>Projects</h3>
-
 <div class="projects">
 
 <article>
 <strong>Bluetooth Enabled Audio & Alarm System</strong>
 <div class="meta">ESP32 · Embedded C · Bluetooth · Sensors · DAC · RTC</div>
 <p class="meta">
-Developed a Bluetooth-enabled safety monitoring system using ESP32.
-Integrated gas, flame, IR motion, temperature & humidity (DHT11), and soil moisture sensors.
-Implemented event-based audio alerts and real-time monitoring.
+Developed a Bluetooth-enabled monitoring and safety alert system using ESP32.
+Integrated gas, flame, IR motion, DHT11, and soil moisture sensors with event-based
+audio response and secure wireless communication.
 </p>
 </article>
 
 <article>
 <strong>Smart Energy Monitoring System</strong>
-<div class="meta">ESP32 · Embedded C · Blynk IoT</div>
+<div class="meta">ESP32 · Embedded C · Blynk App</div>
 <p class="meta">
-Designed a real-time energy monitoring system for automated tracking of power consumption.
-Implemented cloud-based visualization and alerting using the Blynk platform.
+Designed a smart energy monitoring system for accurate, real-time tracking of power
+consumption in residential and industrial environments using IoT dashboards.
 </p>
 </article>
 
@@ -145,8 +131,8 @@ Implemented cloud-based visualization and alerting using the Blynk platform.
 <strong>Smart Medicine Dispenser System</strong>
 <div class="meta">ESP32 · Servo Motor · Photoelectric Sensor · OLED · Blynk</div>
 <p class="meta">
-Built an automated medicine dispensing system for elderly users to reduce under/overdose risk.
-Implemented RTC-based scheduling, pill detection, and mobile notifications.
+Built an automated medicine dispensing system to reduce underdose/overdose risks
+for elderly users using scheduled dispensing and alert notifications.
 </p>
 </article>
 
@@ -154,7 +140,7 @@ Implemented RTC-based scheduling, pill detection, and mobile notifications.
 <strong>Smart Roll-Call System</strong>
 <div class="meta">Arduino · RFID · Embedded C</div>
 <p class="meta">
-Developed an RFID-based automated attendance system with reliable tag detection
+Implemented an RFID-based automated attendance system with reliable tag detection
 and validation logic.
 </p>
 </article>
@@ -163,8 +149,8 @@ and validation logic.
 <strong>Smart Home Automation System</strong>
 <div class="meta">Sensors · ICs · PCB · Battery Modules</div>
 <p class="meta">
-Developed a home automation prototype with sensor-based appliance control,
-custom PCB integration, and battery-powered modules.
+Developed a basic home automation system to control appliances automatically using
+sensor-based embedded logic.
 </p>
 </article>
 
@@ -172,8 +158,16 @@ custom PCB integration, and battery-powered modules.
 </section>
 
 <section class="section">
-<h3>Career Interests</h3>
-<p class="meta">Embedded Engineer · IoT Engineer · Electronics Engineer · Quality Engineer</p>
+<h3>Experience</h3>
+<p class="meta">
+<strong>Graduate Apprentice Trainee</strong><br>
+Foxconn Industrial Internet (Yuzhan Technology Pvt Ltd)<br>
+Apple Display Manufacturing Division<br><br>
+• Visual & functional inspection of Apple display modules<br>
+• Defect identification and root cause analysis support<br>
+• SOP adherence and quality documentation<br>
+• Exposure to high-precision electronics manufacturing
+</p>
 </section>
 
 </main>
@@ -181,94 +175,77 @@ custom PCB integration, and battery-powered modules.
 <aside>
 
 <section class="section">
-<h3>Embedded & Electronics Skills</h3>
+<h3>Technical Skills</h3>
 <div class="skills">
-  <span class="chip">Embedded C</span>
-  <span class="chip">Microcontrollers (ESP32, Arduino)</span>
-  <span class="chip">Sensors & Actuators</span>
-  <span class="chip">Embedded System Design</span>
-  <span class="chip">Embedded Debugging</span>
-  <span class="chip">DAC</span>
-  <span class="chip">RTC</span>
-  <span class="chip">PCB & Electronic Components</span>
-  <span class="chip">Soldering</span>
-</div>
-</section>
-
-<section class="section">
-<h3>IoT & Communication</h3>
-<div class="skills">
-  <span class="chip">Internet of Things (IoT)</span>
-  <span class="chip">Device Connectivity</span>
-  <span class="chip">Automation Systems</span>
-  <span class="chip">Blynk IoT Platform</span>
-  <span class="chip">UART</span>
-  <span class="chip">SPI</span>
-  <span class="chip">I2C</span>
-  <span class="chip">TCP/IP</span>
-  <span class="chip">USB</span>
-</div>
-</section>
-
-<section class="section">
-<h3>Programming & IT Skills</h3>
-<div class="skills">
-  <span class="chip">Embedded C Programming</span>
-  <span class="chip">Python</span>
-  <span class="chip">HTML</span>
-  <span class="chip">CSS</span>
-  <span class="chip">JavaScript</span>
-  <span class="chip">SQL</span>
-  <span class="chip">DBMS</span>
-  <span class="chip">Operating Systems</span>
-  <span class="chip">Data Structures & Algorithms (DSA)</span>
-</div>
-</section>
-
-<section class="section">
-<h3>Quality & Manufacturing Skills</h3>
-<div class="skills">
-  <span class="chip">Visual Inspection</span>
-  <span class="chip">Functional Testing</span>
-  <span class="chip">Defect Identification</span>
-  <span class="chip">Root Cause Analysis (Support)</span>
-  <span class="chip">SOP Adherence</span>
-  <span class="chip">Quality Documentation</span>
-  <span class="chip">Electronics Manufacturing Exposure</span>
-  <span class="chip">Process Improvement Support</span>
+<span class="chip">Embedded C</span>
+<span class="chip">Python</span>
+<span class="chip">ESP32</span>
+<span class="chip">Arduino</span>
+<span class="chip">Sensors & Actuators</span>
+<span class="chip">Embedded System Design</span>
+<span class="chip">Embedded Debugging</span>
+<span class="chip">IoT</span>
+<span class="chip">Blynk Platform</span>
+<span class="chip">UART</span>
+<span class="chip">SPI</span>
+<span class="chip">I2C</span>
+<span class="chip">TCP/IP</span>
+<span class="chip">USB</span>
+<span class="chip">SQL</span>
+<span class="chip">DBMS</span>
+<span class="chip">OS</span>
+<span class="chip">DSA</span>
+<span class="chip">HTML</span>
+<span class="chip">CSS</span>
+<span class="chip">JavaScript</span>
 </div>
 </section>
 
 <section class="section">
 <h3>Soft Skills</h3>
 <div class="skills">
-  <span class="chip">Analytical Thinking</span>
-  <span class="chip">Problem Solving</span>
-  <span class="chip">Attention to Detail</span>
-  <span class="chip">Quality Focus</span>
-  <span class="chip">Teamwork & Collaboration</span>
-  <span class="chip">Good Communication</span>
-  <span class="chip">Willingness to Learn</span>
-  <span class="chip">Adaptability</span>
+<span class="chip">Analytical Thinking</span>
+<span class="chip">Problem Solving</span>
+<span class="chip">Teamwork</span>
+<span class="chip">Attention to Detail</span>
+<span class="chip">Quality Focus</span>
+<span class="chip">Communication</span>
+<span class="chip">Willingness to Learn</span>
 </div>
 </section>
 
 <section class="section">
-<h3>Experience</h3>
+<h3>Education</h3>
 <p class="meta">
-<strong>Graduate Apprentice Trainee</strong><br>
-Foxconn Industrial Internet – Apple Display Manufacturing Division<br>
-Visual and functional inspection, defect analysis, SOP adherence,
-quality documentation, and exposure to high-precision electronics manufacturing.
+<strong>B.Tech – Electronics & Communication Engineering</strong><br>
+Vel Tech University — GPA: 8.04
 </p>
 </section>
 
 <section class="section">
+<h3>Certifications</h3>
+<p class="meta">
+• In-Plant Training – Tescom<br>
+• Embedded Systems – Simplilearn<br>
+• Python – Simplilearn<br>
+• AI Masterclass – Novitech
+</p>
+</section>
+
+<section class="section">
+<h3>Languages</h3>
+<p class="meta">English · Tamil · Telugu</p>
+</section>
+
+<section class="section">
 <h3>Resume</h3>
-<a href="poojachinnadurai_resume.pdf" download>📄 Download Resume (PDF)</a>
+<a href="poojachinnadurai_resume.pdf" download>
+📄 Download Resume – Pooja C
+</a>
 </section>
 
 </aside>
+
 </div>
 
 <footer>
@@ -279,3 +256,4 @@ quality documentation, and exposure to high-precision electronics manufacturing.
 </div>
 </body>
 </html>
+
