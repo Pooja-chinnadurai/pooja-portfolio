@@ -1,141 +1,281 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pooja C — Portfolio</title>
-  <meta name="description" content="Pooja C — Electronics & Communication Engineer | Embedded · IoT · Quality" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071024 0%, #071633 100%);color:#e6eef6}
-    .container{max-width:980px;margin:36px auto;padding:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    header{display:flex;gap:18px;align-items:center}
-    .avatar{width:102px;height:102px;border-radius:14px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
-    h1{margin:0;font-size:26px}
-    .subtitle{color:var(--muted);margin-top:6px}
-    .grid{display:grid;grid-template-columns:1fr 340px;gap:18px;margin-top:20px}
-    .section{margin-top:18px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-    .projects>article{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:10px}
-    .meta{color:var(--muted);font-size:13px}
-    .contact a{color:var(--accent);text-decoration:none}
-    footer{margin-top:20px;color:var(--muted);font-size:13px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}.avatar{width:82px;height:82px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pooja C — Portfolio</title>
+
+<meta name="description" content="Pooja C | Electronics & Communication Engineer | Embedded Systems | IoT | Quality Engineering">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#071024;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#94a3b8;
+}
+body{
+  margin:0;
+  font-family:Inter,system-ui;
+  background:linear-gradient(180deg,#071024,#071633);
+  color:#e6eef6;
+}
+.container{
+  max-width:1100px;
+  margin:40px auto;
+  padding:24px;
+}
+.card{
+  background:rgba(255,255,255,0.04);
+  border-radius:16px;
+  padding:24px;
+}
+header{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+header img{
+  width:110px;
+  height:110px;
+  border-radius:14px;
+  object-fit:cover;
+}
+.subtitle{
+  color:var(--muted);
+  margin-top:6px;
+}
+a{color:var(--accent);text-decoration:none}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:20px;
+  margin-top:24px;
+}
+.section{margin-top:20px}
+.meta{color:var(--muted);font-size:14px}
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.chip{
+  background:rgba(255,255,255,0.06);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+}
+.projects article{
+  background:rgba(255,255,255,0.05);
+  padding:14px;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+footer{
+  margin-top:24px;
+  font-size:13px;
+  color:var(--muted);
+}
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="card">
-      <header>
-        <img src="/mnt/data/passport size.jpg" alt="Pooja Photo" style="width:102px;height:102px;border-radius:14px;object-fit:cover;"/>
-        <div>
-          <h1>Pooja C</h1>
-          <div class="subtitle">Electronics & Communication Engineer — Embedded · IoT · Quality Control</div>
-          <div style="margin-top:10px;color:var(--muted);font-size:14px">Krishnagiri, Tamil Nadu · <a class="contact" href="mailto:poojarasi72@gmail.com">poojarasi72@gmail.com</a> · 9994699147</div>
-          <div style="margin-top:6px"><a class="contact" href="https://www.linkedin.com/in/poojachinnadurai" target="_blank">linkedin.com/in/poojachinnadurai</a></div>
-        </div>
-      </header>
+<div class="container">
+<div class="card">
 
-      <div class="grid">
-        <main>
-          <section class="section">
-            <h3>About</h3>
-            <p class="meta">A motivated Electronics and Communication Engineering graduate with hands-on experience in Quality Inspection at Foxconn (Apple division). Skilled in visual inspection, defect detection, functional testing, and following strict SOPs. Passionate about embedded systems, IoT and building reliable products.</p>
-          </section>
-
-          <section class="section">
-            <h3>Projects</h3>
-            <div class="projects">
-              <article>
-                <strong>Smart Energy Monitoring System</strong>
-                <div class="meta">ESP32 · Blynk App · Embedded C Programming</div>
-                <p>Developed a smart energy monitoring system to track real-time power usage using the ESP32 microcontroller. Integrated Blynk IoT platform for live data monitoring and alerts. Implemented embedded C firmware for stable data transmission and accurate measurement processing.</p>
-              </article>
-
-              <article>
-                <strong>Smart Medicine Dispenser System</strong>
-                <div class="meta">ESP32 · Photoelectric Sensor · Servo Motor · OLED Display · Blynk App · Embedded C Programming</div>
-                <p>Built an automated medication dispensing system for elderly users. Used a servo actuator to release doses, a photoelectric sensor for pill detection, an OLED display for instructions, and Blynk notifications for reminders. Programmed RTC-based schedules and safety alert logic.</p>
-              </article>
-
-              <article>
-                <strong>Smart Roll-Call System</strong>
-                <div class="meta">Arduino · RFID Sensor · Embedded C Programming</div>
-                <p>Created an automated attendance system using an Arduino microcontroller with RFID card scanning. Implemented tag detection, ID validation, and simple data logging. Focused on stable RFID communication and reducing scan-time delays.</p>
-              </article>
-
-              <article>
-                <strong>Solar Power Trash Compactor</strong>
-                <div class="meta">Solar Panels · Sensors · Embedded Systems</div>
-                <p>Designed a solar-powered trash compactor that increases waste bin capacity. Integrated sensors to detect bin fill levels and programmed an embedded control mechanism to trigger compaction cycles automatically.</p>
-              </article>
-
-              <article>
-                <strong>Smart Home Automation System</strong>
-                <div class="meta">Electronic Sensors · ICs · PCBs · Battery Modules</div>
-                <p>Developed a home automation prototype featuring environmental sensors, IC-based control circuits, custom PCB layouts, and battery-powered modules. Implemented basic embedded logic for automated appliance control and safety monitoring.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="section">
-            <h3>Career Interests</h3>
-            <p class="meta">Embedded Engineer · IoT Engineer · System Engineer · Quality Engineer</p>
-          </section>
-        </main>
-
-        <aside>
-          <section class="section">
-            <h3>Skills</h3>
-            <div class="skills">
-              <span class="chip">Embedded Systems</span>
-              <span class="chip">C Programming</span>
-              <span class="chip">Arduino / ESP32</span>
-              <span class="chip">Sensors & Actuators</span>
-              <span class="chip">IoT Concepts</span>
-              <span class="chip">Visual Inspection</span>
-              <span class="chip">Soldering & Debugging</span>
-              <span class="chip">MS Excel (Reports)</span>
-            </div>
-          </section>
-
-          <section class="section">
-            <h3>Strengths</h3>
-            <ul class="meta">
-              <li>Quick Learner</li>
-              <li>Detail-oriented</li>
-              <li>Team player</li>
-              <li>Disciplined & Reliable</li>
-            </ul>
-          </section>
-
-          <section class="section">
-            <h3>Languages</h3>
-            <div class="meta">English — Professional<br/>Tamil — Native</div>
-          </section>
-
-          <section class="section">
-            <h3>Resume</h3>
-            <p class="meta">Download my updated resume:</p>
-            <a href="/mnt/data/Final_resume.pdf" download style="color:var(--accent);font-weight:600;">📄 Download Resume (PDF)</a>
-          </section>
-        </aside>
-      </div>
-
-      <footer>
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-          <div>© Pooja C — Electronics & Communication Engineering</div>
-          <div class="meta">Last updated: November 23, 2025</div>
-        </div>
-      </footer>
-
+<header>
+  <img src="passport.jpg" alt="Pooja C">
+  <div>
+    <h1>Pooja C</h1>
+    <div class="subtitle">Electronics & Communication Engineer | Embedded Systems · IoT · Quality</div>
+    <div class="meta">
+      Krishnagiri, Tamil Nadu · 
+      <a href="mailto:poojarasi72@gmail.com">poojarasi72@gmail.com</a> · 9994699147
+    </div>
+    <div class="meta">
+      <a href="https://www.linkedin.com/in/poojachinnadurai" target="_blank">LinkedIn Profile</a>
     </div>
   </div>
+</header>
+
+<div class="grid">
+
+<main>
+
+<section class="section">
+<h3>About Me</h3>
+<p class="meta">
+Electronics and Communication Engineering graduate with hands-on experience in Embedded Systems, IoT,
+and real industry exposure as a Graduate Apprentice Trainee at Foxconn (Apple Display Manufacturing Division).
+Experienced in quality inspection, defect analysis, SOP adherence, and embedded system development.
+Actively seeking entry-level Embedded / IoT / Electronics / Quality Engineer roles.
+</p>
+</section>
+
+<section class="section">
+<h3>Projects</h3>
+
+<div class="projects">
+
+<article>
+<strong>Bluetooth Enabled Audio & Alarm System</strong>
+<div class="meta">ESP32 · Embedded C · Bluetooth · Sensors · DAC · RTC</div>
+<p class="meta">
+Developed a Bluetooth-enabled safety monitoring system using ESP32.
+Integrated gas, flame, IR motion, temperature & humidity (DHT11), and soil moisture sensors.
+Implemented event-based audio alerts and real-time monitoring.
+</p>
+</article>
+
+<article>
+<strong>Smart Energy Monitoring System</strong>
+<div class="meta">ESP32 · Embedded C · Blynk IoT</div>
+<p class="meta">
+Designed a real-time energy monitoring system for automated tracking of power consumption.
+Implemented cloud-based visualization and alerting using the Blynk platform.
+</p>
+</article>
+
+<article>
+<strong>Smart Medicine Dispenser System</strong>
+<div class="meta">ESP32 · Servo Motor · Photoelectric Sensor · OLED · Blynk</div>
+<p class="meta">
+Built an automated medicine dispensing system for elderly users to reduce under/overdose risk.
+Implemented RTC-based scheduling, pill detection, and mobile notifications.
+</p>
+</article>
+
+<article>
+<strong>Smart Roll-Call System</strong>
+<div class="meta">Arduino · RFID · Embedded C</div>
+<p class="meta">
+Developed an RFID-based automated attendance system with reliable tag detection
+and validation logic.
+</p>
+</article>
+
+<article>
+<strong>Smart Home Automation System</strong>
+<div class="meta">Sensors · ICs · PCB · Battery Modules</div>
+<p class="meta">
+Developed a home automation prototype with sensor-based appliance control,
+custom PCB integration, and battery-powered modules.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<h3>Career Interests</h3>
+<p class="meta">Embedded Engineer · IoT Engineer · Electronics Engineer · Quality Engineer</p>
+</section>
+
+</main>
+
+<aside>
+
+<section class="section">
+<h3>Embedded & Electronics Skills</h3>
+<div class="skills">
+  <span class="chip">Embedded C</span>
+  <span class="chip">Microcontrollers (ESP32, Arduino)</span>
+  <span class="chip">Sensors & Actuators</span>
+  <span class="chip">Embedded System Design</span>
+  <span class="chip">Embedded Debugging</span>
+  <span class="chip">DAC</span>
+  <span class="chip">RTC</span>
+  <span class="chip">PCB & Electronic Components</span>
+  <span class="chip">Soldering</span>
+</div>
+</section>
+
+<section class="section">
+<h3>IoT & Communication</h3>
+<div class="skills">
+  <span class="chip">Internet of Things (IoT)</span>
+  <span class="chip">Device Connectivity</span>
+  <span class="chip">Automation Systems</span>
+  <span class="chip">Blynk IoT Platform</span>
+  <span class="chip">UART</span>
+  <span class="chip">SPI</span>
+  <span class="chip">I2C</span>
+  <span class="chip">TCP/IP</span>
+  <span class="chip">USB</span>
+</div>
+</section>
+
+<section class="section">
+<h3>Programming & IT Skills</h3>
+<div class="skills">
+  <span class="chip">Embedded C Programming</span>
+  <span class="chip">Python</span>
+  <span class="chip">HTML</span>
+  <span class="chip">CSS</span>
+  <span class="chip">JavaScript</span>
+  <span class="chip">SQL</span>
+  <span class="chip">DBMS</span>
+  <span class="chip">Operating Systems</span>
+  <span class="chip">Data Structures & Algorithms (DSA)</span>
+</div>
+</section>
+
+<section class="section">
+<h3>Quality & Manufacturing Skills</h3>
+<div class="skills">
+  <span class="chip">Visual Inspection</span>
+  <span class="chip">Functional Testing</span>
+  <span class="chip">Defect Identification</span>
+  <span class="chip">Root Cause Analysis (Support)</span>
+  <span class="chip">SOP Adherence</span>
+  <span class="chip">Quality Documentation</span>
+  <span class="chip">Electronics Manufacturing Exposure</span>
+  <span class="chip">Process Improvement Support</span>
+</div>
+</section>
+
+<section class="section">
+<h3>Soft Skills</h3>
+<div class="skills">
+  <span class="chip">Analytical Thinking</span>
+  <span class="chip">Problem Solving</span>
+  <span class="chip">Attention to Detail</span>
+  <span class="chip">Quality Focus</span>
+  <span class="chip">Teamwork & Collaboration</span>
+  <span class="chip">Good Communication</span>
+  <span class="chip">Willingness to Learn</span>
+  <span class="chip">Adaptability</span>
+</div>
+</section>
+
+<section class="section">
+<h3>Experience</h3>
+<p class="meta">
+<strong>Graduate Apprentice Trainee</strong><br>
+Foxconn Industrial Internet – Apple Display Manufacturing Division<br>
+Visual and functional inspection, defect analysis, SOP adherence,
+quality documentation, and exposure to high-precision electronics manufacturing.
+</p>
+</section>
+
+<section class="section">
+<h3>Resume</h3>
+<a href="Pooja_C_Resume.pdf" download>📄 Download Resume (PDF)</a>
+</section>
+
+</aside>
+</div>
+
+<footer>
+© Pooja C · Electronics & Communication Engineering
+</footer>
+
+</div>
+</div>
 </body>
 </html>
-
